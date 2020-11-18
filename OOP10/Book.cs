@@ -1,10 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace OOP10
 {
     public class Book
     {
+        /// <summary>
+        /// sci-fi
+        /// detske
+        /// romanticke
+        /// naucne
+        /// dobrodruzne
+        /// </summary>
+        public static List<string> categoryList = new List<string>(){"detské", "romantické", "náučné", "sci-fi", "dobrodružné"};
+        
         private string title;
         private string author;
         private string category;
@@ -22,8 +32,7 @@ namespace OOP10
             set => author = value;
         }
         public string Category 
-        { 
-            get => category;
+        {
             set => category = value;
         }
         public int ReleaseDate 
