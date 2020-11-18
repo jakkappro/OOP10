@@ -6,7 +6,11 @@ namespace OOP10
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello svet!");
+            Book LOTR = new Book();
+
+            LOTR.title = "Tities";
+
+            Console.WriteLine(LOTR.title);
         }
     }
 }
