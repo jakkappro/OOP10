@@ -8,9 +8,13 @@ namespace OOP10
         {
             Book LOTR = new Book();
 
-            LOTR.title = "Tities";
-
-            Console.WriteLine(LOTR.title);
+            LOTR.SetTitle("Tities");
+            LOTR.SetPages(1);
+            LOTR.SetCategory("Eroticke");
+            LOTR.SetReleaseDate(2021);
+            LOTR.SetAuthor("Kubino");
+            
+            LOTR.Show();
         }
     }
 }
