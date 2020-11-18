@@ -8,11 +8,11 @@ namespace OOP10
         {
             Book LOTR = new Book();
 
-            LOTR.SetTitle("Tities");
-            LOTR.SetPages(1);
-            LOTR.SetCategory("Eroticke");
-            LOTR.SetReleaseDate(2021);
-            LOTR.SetAuthor("Kubino");
+            LOTR.Title = "Tities";
+            LOTR.Pages =1;
+            LOTR.Category = "Eroticke";
+            LOTR.ReleaseDate = 2021;
+            LOTR.Author = "Kubino";
             
             LOTR.Show();
         }
