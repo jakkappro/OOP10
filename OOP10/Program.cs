@@ -6,15 +6,14 @@ namespace OOP10
     {
         static void Main(string[] args)
         {
-            Book LOTR = new Book();
-
-            LOTR.Title = "Tities";
-            LOTR.Pages =1;
-            LOTR.Category = "Eroticke";
-            LOTR.ReleaseDate = 2021;
-            LOTR.Author = "Kubino";
-            
-            LOTR.Show();
+            var LOTR2 = new Book();
+            var LOTR3 = new Book("book", 12);
+            var HOBIT = new Book("hobit", 200, 1712,"never hapend", "ten najlepsi");
+            LOTR2.Show();
+            Console.WriteLine();
+            LOTR3.Show();
+            Console.WriteLine();
+            HOBIT.Show();
         }
     }
 }

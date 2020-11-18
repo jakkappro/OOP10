@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace OOP10
 {
@@ -54,6 +55,27 @@ namespace OOP10
                     pages = value;
                 }
             }
+        }
+
+        //public Book(string title, int pages, int releaseDate = -1, string category = "-1", string author = "-1")
+
+        public Book() : this("-1", -1, -1, "-1", "-1")
+        {
+            
+        }
+
+        public Book(string title, int pages) : this(title, pages, -1, "-1", "-1")
+        {
+            
+        }
+
+        public Book(string title, int pages, int releaseDate, string category, string author)
+        {
+            this.title = title;
+            this.pages = pages;
+            this.releaseDate = releaseDate;
+            this.category = category;
+            this.author = author;
         }
 
         public void Show()
